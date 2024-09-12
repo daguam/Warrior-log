@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #eee;
+  padding: 0;
+}
+
+header {
+  background-color: #9e13f5;
+  margin: auto 0px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+form {
+  padding: 20px 0;
+}
+
+form input {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  width: 100%;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #1d1b1b;
+  font-weight: 300;
+}
+
+form input::placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+
+form button {
+  display: block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  appearance: none;
+  outline: 0;
+  background-color: #9e13f5;
+  border: 0;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  color: #fff;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 18px;
+}
+
+form button:hover {
+  background-color: #1d1b1b;
+}
+
+.login-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: darkgrey;
+  padding: 5vh 0;
+  text-align: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.login-container h1 {
+  font-size: 4vh;
+  font-weight: 200;
+}
+
+.pass-recovery {
+  color: blue;
+  padding: 2em;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: darkgrey;
+  padding: 5vh 0;
+  text-align: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.todo-container ul {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  text-align: left;
+}
+
+.todo-container li {
+  font-size: 1em;
+  font-weight: 200;
+}
+@media only screen and (max-width: 1024px) {
+  .login-container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-height: 1024px) {
+  .login-container h1 {
+    font-size: 5vh; /* Increase font size for larger screens */
+  }
+  form input,
+  form button,
+  form a {
+    font-size: 2.5vh; /* Increase input and button font size */
+    padding: 1.5vh; /* Adjust padding for inputs and buttons */
+  }
+  form {
+    padding: 10vh 0; /* Reduce form padding on larger screens */
+  }
+
+  .description {
+    font-size: 2.5vh;
+    padding: 1.5vh;
+  }
+}
